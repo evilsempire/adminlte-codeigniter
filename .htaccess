@@ -1,0 +1,12 @@
+# Turn on URL rewriting
+RewriteEngine On
+
+# !IMPORTANT! Set your RewriteBase here and don't forget trailing and leading slashes.
+# If your page resides at http://www.example.com/mypage then use
+# RewriteBase /mypage
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?/$1 [L]
+
