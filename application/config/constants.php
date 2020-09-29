@@ -86,4 +86,4 @@ defined('EXIT__AUTO_MAX')      or define('EXIT__AUTO_MAX', 125); // highest auto
 
 
 
-define('SITE_NAME', 'Codeigniter with Admin LTE');
+define('SITE_NAME', '%SITE_NAME%');
